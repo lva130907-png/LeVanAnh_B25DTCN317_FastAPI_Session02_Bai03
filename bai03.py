@@ -1,3 +1,17 @@
+""" 
+1. Input của bài toán là danh sách students
+
+2. Output mong muốn là danh sách sinh viên có status = "active"
+
+3. Điều kiện dùng để xác định sinh viên đang học: student["status"] == "active"
+
+4. Các bước xử lý API GET /students/active:
+    Duyệt danh sách students
+    Lọc các sinh viên có status = "active"
+        Nếu không có, trả về thông báo và mảng rỗng
+        Nếu có, trả về danh sách sinh viên đang học
+"""
+
 from fastapi import FastAPI
 
 app = FastAPI()
